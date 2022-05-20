@@ -12,7 +12,7 @@ public class ColectionMain
         //get size
         System.out.println(numbersArray.length);
         System.out.println(numbersColl.size());
-        //fell
+        //fill
         numbersArray[0] = 1;
         numbersArray[3] = 4;
 
