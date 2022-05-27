@@ -18,13 +18,11 @@ public class Main {
                     System.out.println(list);
                     break;
                 }
-                case "exit":
-                {
+                case "exit": {
                     System.out.println(list);
                     System.exit(0);
                 }
-                case "remove":
-                {
+                case "remove": {
                     removing(list);
                 }
             }
@@ -56,22 +54,20 @@ public class Main {
 
     }
 
-    public static void removing(List<Product> list)
-    {
+    public static void removing(List<Product> list) {
         Iterator<Product> productsIterator = list.listIterator();
         String answer;
         boolean search;
         int id;
         System.out.println("Товар под каким именем должен быть удален?");
         answer = SCANNER.nextLine();
-      while (productsIterator.hasNext())
-      {
-          Product nextProduct = productsIterator.next();
-          if (nextProduct.name.equals(answer)){
-              productsIterator.remove();
-              System.out.println("Товар успешно удален");
-              return;
-          }
+        while (productsIterator.hasNext()) {
+            Product nextProduct = productsIterator.next();
+            if (nextProduct.name.equals(answer)) {
+                productsIterator.remove();
+                System.out.println("Товар успешно удален");
+                return;
+            }
         }
         System.out.println("Товара с таким именем нет");
 
