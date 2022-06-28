@@ -1,4 +1,4 @@
-package com.homework.hoework12;
+package com.homework.homework12;
 
 public class Juugist extends BodyGuard{
     @Override
