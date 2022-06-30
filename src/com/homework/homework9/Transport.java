@@ -1,10 +1,10 @@
 package com.homework.homework9;
 
-public class Transport
+public abstract class Transport
 {
-    public int weight ;
-    public int length;
-    public int speed;
+    private int weight ;
+   private int length;
+    private  int speed;
     public Transport(int weight, int length, int speed)
     {
         this.length = length;
@@ -12,29 +12,32 @@ public class Transport
         this.speed = speed;
     }
 
-    public int getLength() {
+    private int getLength() {
         return length;
     }
 
-    public int getWeight() {
+    private int getWeight() {
         return weight;
     }
 
-    public int getSpeed() {
+    private int getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
+    private void setSpeed(int speed) {
         this.speed = speed;
     }
 
-    public void setLength(int length) {
+    private void setLength(int length) {
         this.length = length;
     }
 
-    public void setWeight(int weight) {
+    private void setWeight(int weight) {
         this.weight = weight;
     }
+
+    public abstract void go();
+
 
     @Override
     public String toString() {
